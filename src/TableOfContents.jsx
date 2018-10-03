@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Row = props => <div class="row">{props.children}</div>
+import { Icon } from './Icon'
 
-const Icon = props => <i style={props.style} class={`fas fa-${props.children}`}></i>
+const Row = props => <div class="row">{props.children}</div>
 
 const cellStyle = (index, currentIndex) => {
   if(currentIndex < index) return '';
@@ -29,7 +29,7 @@ const TableOfContents = props => (
       <Group>
         <Cell index={3} currentIndex={props.current} icon="database">Databases</Cell>
         <Cell index={4} currentIndex={props.current} icon="sitemap">DBs as APIs</Cell>
-        <Cell index={5} currentIndex={props.current} icon="play" iconStyle={{transform: "rotate(30deg)", display: "inline-block", position: "relative", top: "5px"}}>Test Pyramid</Cell>
+        <Cell index={5} currentIndex={props.current} icon="custom-triangle">Test Pyramid</Cell>
       </Group>
       <Group>
         <Cell index={6} currentIndex={props.current} icon="code">Service APIs</Cell>

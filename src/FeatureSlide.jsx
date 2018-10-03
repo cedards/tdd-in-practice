@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Icon } from './Icon'
 import { spot, good, bad } from './colors'
+import { Hideable } from './Hideable'
+import { Highlightable } from './Highlight'
 
 const containerStyle1 = {
     height: "100%",
@@ -38,13 +40,33 @@ const contentStyle = {
     marginLeft: "25%"
 }
 
-const FeatureSlide = props => (
+export const FeatureSlideHeader = props => (
+  <h1 style={titleStyle(props.highlight)}><Icon>{props.icon}</Icon> {props.children}</h1>
+)
+
+export const FeatureSlideContent = props => (
+  <div style={contentStyle}>{props.children}</div>
+)
+
+export const FeatureSlideFrame = props => (
   <div style={containerStyle1}>
     <div style={containerStyle2}>
-      <h1 style={titleStyle(props.highlight)}><Icon>{props.icon}</Icon> {props.title}</h1>
-      <div style={contentStyle}>{props.children}</div>
+      {props.children}
     </div>
   </div>
 )
 
-export { FeatureSlide }
+export const FeatureSlide = props => (
+  <FeatureSlideFrame>
+      <FeatureSlideHeader highlight={props.highlight} icon={props.icon}>{props.title}</FeatureSlideHeader>
+      <FeatureSlideContent>{props.children}</FeatureSlideContent>
+  </FeatureSlideFrame>
+)
+
+export const FeatureLine = Highlightable(Hideable(props => (
+  <p style={{fontSize: "4.4em"}}>{props.children}</p>
+)))
+
+FeatureLine.defaultProps = {
+  show: true
+}

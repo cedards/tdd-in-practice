@@ -1,155 +1,192 @@
 import React from 'react'
-import { FeatureSlide } from './FeatureSlide.jsx'
-import { FeatureLine } from './FeatureLine.jsx'
 import { TableOfContents } from './TableOfContents'
+import { Hello } from './slides/Hello'
+import { TalkIsNot, TalkIs } from './slides/TalkIsNot'
+import {
+  Epistemology,
+  EpistemologySchools,
+  EpistemologicalAttitude,
+  TddStance,
+  EpistemologyReprise,
+  EpistemologyImpact,
+  TheFirstQuestion,
+} from './slides/Epistemology'
+import {
+  DatabaseFeature,
+  DbTestDrive,
+  IntegratingViaDb,
+  UnitVsIntegration,
+  WhyAPyramid,
+  NotUnitOrIntegration,
+  YesFastRobustClear,
+} from './slides/Databases'
+import {
+  ApiFeature,
+  ApiTestDrive,
+  BeTheChange,
+} from './slides/ServiceApi'
+import {
+  HardIntegrationsFeature,
+  HardIntegrationsTestDrive,
+  ManualStepsFeature,
+  ManualStepsProblem,
+  ManualStepsWhatDo,
+  EnvironmentSpecificProblem,
+  UsualTricks,
+  SameTechnique,
+  SolidInTheWild,
+} from './slides/HardIntegrations'
+import { NoteOnTooling } from './slides/Tooling'
 
 const slides = [
   <TableOfContents current={0}/>,
   <TableOfContents current={1}/>,
-  // Hello 0
-  // Hello 1 
-  // Hello 2
-  // Hello 3
-  // Talk is not 0
-  // Talk is not 1
-  // Talk is not 2
-  // Talk is not 3
-  // Talk is 0
-  // Talk is 1
-  // Talk is 2
-  // Talk is 2
-  // TOC 1
-  // TOC 2
+  <Hello index={0}/>,
+  <Hello index={1}/>,
+  <Hello index={2}/>,
+  <Hello index={3}/>,
+  <TalkIsNot index={0}/>,
+  <TalkIsNot index={1}/>,
+  <TalkIsNot index={2}/>,
+  <TalkIsNot index={3}/>,
+  <TalkIs index={0}/>,
+  <TalkIs index={1}/>,
+  <TalkIs index={2}/>,
+  <TalkIs index={3}/>,
+  <TableOfContents current={1}/>,
+  <TableOfContents current={2}/>,
   // A weird tangent
   // epistemology 0
   // epistemology ?
   // epistemology ??
   // epistemology ???
-  // epistemology 0
-  // epistemology 1
-  // epistemology 2
-  // epistemology 0
-  // epistemology a
-  // epistemology b
-  // epistemology c
-  // epistemology d
-  // epistemology 0
-  // epistemological attitude
-  // epistemological attitude TM
-  // epistemological attitude hashtag
-  // tdd is the stance 0
-  // tdd is the stance A
-  // tdd is the stance B
+  <Epistemology index={0}/>,
+  <Epistemology index={1}/>,
+  <Epistemology index={2}/>,
+  <EpistemologySchools index={0}/>,
+  <EpistemologySchools index={1}/>,
+  <EpistemologySchools index={2}/>,
+  <EpistemologySchools index={3}/>,
+  <EpistemologySchools index={4}/>,
+  <EpistemologySchools index={0}/>,
+  <EpistemologicalAttitude index={0}/>,
+  <EpistemologicalAttitude index={1}/>,
+  <TddStance index={0}/>,
+  <TddStance index={1}/>,
+  <TddStance index={2}/>,
   // thesis
-  // TOC 2
-  // TOC 3
-  // db feature 0
-  // db feature 1
-  // db feature test drive 0
-  // db feature test drive 1
-  // db feature test drive 2
+  <TableOfContents current={2}/>,
+  <TableOfContents current={3}/>,
+  <DatabaseFeature index={0}/>,
+  <DatabaseFeature index={1}/>,
+  <DbTestDrive index={0}/>,
+  <DbTestDrive index={1}/>,
+  <DbTestDrive index={2}/>,
   // GRAPHICS
-  // what really matters 0
-  // what really matters highlight
+  <DbTestDrive index={3}/>,
+  <DbTestDrive index={4}/>,
   // what really matters how
   // what really matters why
-  // db feature 0
-  // db feature bad
-  // db feature good 1
-  // db feature good 2
+  <DatabaseFeature index={2}/>,
+  <DatabaseFeature index={3}/>,
+  <DatabaseFeature index={4}/>,
+  <DatabaseFeature index={5}/>,
   // GRAPHICS
-  // TOC 3
-  // TOC 4
-  // integrating via db
+  <TableOfContents current={3}/>,
+  <TableOfContents current={4}/>,
+  <IntegratingViaDb/>,
   // GRAPHICS
   // thesis on persistence 0
   // thesis on persistence 1
   // thesis on persistence 2
   // GRAPHICS
   // thesis on persistence 2
-  // TOC 4
-  // TOC 5
-  // unit vs. integration 0
-  // unit vs. integration 1
+  <TableOfContents current={4}/>,
+  <TableOfContents current={5}/>,
+  <UnitVsIntegration index={0}/>,
+  <UnitVsIntegration index={1}/>,
   // unit vs. integration 2
   // GRAPHICS
-  // why a pyramid 0
-  // why a pyramid 1
+  <WhyAPyramid index={0}/>,
+  <WhyAPyramid index={1}/>,
   // GRAPHICS
-  // not unit or integration
-  // yes fast robust clear
-  // TOC 5
-  // TOC 6
-  // api feature 0
-  // api feature 1
+  <NotUnitOrIntegration/>,
+  <YesFastRobustClear/>,
+  <TableOfContents current={5}/>,
+  <TableOfContents current={6}/>,
+  <ApiFeature index={0}/>,
+  <ApiFeature index={1}/>,
   // GRAPHICS
   // thesis on service 0
   // thesis on service 1
-  // test drive api feature 0
-  // test drive api feature 1
+  <ApiTestDrive index={0}/>,
+  <ApiTestDrive index={1}/>,
+  <ApiTestDrive index={2}/>,
   // example test 0
   // example test 1
   // GRAPHICS
   // contract test tools
-  // TOC 6
-  // TOC 7
+  <TableOfContents current={6}/>,
+  <TableOfContents current={7}/>,
   // test question 0
   // test question 1
   // test question 2
-  // TOC 7
-  // TOC 8
-  // not on board 0
-  // not on board 1
-  // not on board 2
-  // not on board 3
-  // TOC 8
-  // TOC 9
-  // hard integration feature
-  // hard integration test drive 0
-  // hard integration test drive 1
+  <TableOfContents current={7}/>,
+  <TableOfContents current={8}/>,
+  <BeTheChange index={0}/>,
+  <BeTheChange index={1}/>,
+  <BeTheChange index={2}/>,
+  <BeTheChange index={3}/>,
+  <TableOfContents current={8}/>,
+  <TableOfContents current={9}/>,
+  <HardIntegrationsFeature index={0}/>,
+  <HardIntegrationsFeature index={1}/>,
+  <HardIntegrationsTestDrive index={0}/>,
+  <HardIntegrationsTestDrive index={1}/>,
+  <HardIntegrationsTestDrive index={2}/>,
   // GRAPHICS
-  // what matters 0
-  // what matters 1
-  // hard integration test drive 2
+  <HardIntegrationsFeature index={2}/>,
+  <HardIntegrationsFeature index={3}/>,
+  <HardIntegrationsTestDrive index={3}/>,
   // GRAPHICS
   // thesis on email notifications 0
   // thesis on email notifications 1
-  // TOC 9
-  // TOC 10
-  // manual steps feature 0
-  // manual steps feature 1
-  // manual steps problem
-  // manual steps what do 0
-  // manual steps what do 1
+  <TableOfContents current={9}/>,
+  <TableOfContents current={10}/>,
+  <ManualStepsFeature index={0}/>,
+  <ManualStepsFeature index={1}/>,
+  <ManualStepsFeature index={2}/>,
+  <ManualStepsProblem/>,
+  <ManualStepsWhatDo index={0}/>,
+  <ManualStepsWhatDo index={1}/>,
   // GRAPHICS
-  // TOC 10
-  // TOC 11
-  // environment specific 0
-  // environment specific 1
-  // environment specific 2
-  // usual tricks
+  <TableOfContents current={10}/>,
+  <TableOfContents current={11}/>,
+  <EnvironmentSpecificProblem index={0}/>,
+  <EnvironmentSpecificProblem index={1}/>,
+  <EnvironmentSpecificProblem index={2}/>,
+  <UsualTricks/>,
   // GRAPHICS
   // example code contract
   // example code DEV
   // example code QA
-  // same techniques
-  // solid in the wild
-  // TOC 11
-  // TOC 12
-  // be ruthless
-  // TOC 12
-  // TOC 13
-  // epistemology reprise 0
-  // epistemology reprise 1
-  // epistemology reprise 2
-  // epistemology impact
-  // the first question 0
-  // the first question 1
-  // the first question 2
-  // the first question 3
-  // TOC 13
-  // TOC 14
-  // thanks
+  <SameTechnique/>,
+  <SolidInTheWild/>,
+  <TableOfContents current={11}/>,
+  <TableOfContents current={12}/>,
+  <NoteOnTooling/>,
+  <TableOfContents current={12}/>,
+  <TableOfContents current={13}/>,
+  <EpistemologyReprise index={0}/>,
+  <EpistemologyReprise index={1}/>,
+  <EpistemologyReprise index={2}/>,
+  <EpistemologyImpact/>,
+  <TheFirstQuestion index={0}/>,
+  <TheFirstQuestion index={1}/>,
+  <TheFirstQuestion index={2}/>,
+  <TheFirstQuestion index={3}/>,
+  <TableOfContents current={13}/>,
+  <TableOfContents current={14}/>,
 ]
 
 export { slides }
