@@ -52,7 +52,7 @@ export const UnitVsIntegration = props => (
 
 export const WhyAPyramid = props => (
   <FeatureSlideFrame>
-    <FeatureSlideHeader icon="">Why a {'\u00A0'}<Icon>custom-triangle</Icon>?</FeatureSlideHeader>
+    <FeatureSlideHeader icon="">why a {'\u00A0'}<Icon>custom-triangle</Icon>?</FeatureSlideHeader>
     <FeatureSlideContent>
       <FeatureLine show={props.index >= 1}>The testing pyramid is a heuristic to help you create a <Good>fast, robust, clear</Good> suite</FeatureLine> 
     </FeatureSlideContent>

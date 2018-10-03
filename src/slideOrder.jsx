@@ -11,6 +11,7 @@ import {
   EpistemologyImpact,
   TheFirstQuestion,
 } from './slides/Epistemology'
+import { ThesisSlide } from './ThesisSlide'
 import {
   DatabaseFeature,
   DbTestDrive,
@@ -74,11 +75,12 @@ const slides = [
   <TddStance index={0}/>,
   <TddStance index={1}/>,
   <TddStance index={2}/>,
-  // thesis
+  <ThesisSlide/>,
   <TableOfContents current={2}/>,
   <TableOfContents current={3}/>,
   <DatabaseFeature index={0}/>,
   <DatabaseFeature index={1}/>,
+  <DatabaseFeature index={2}/>,
   <DbTestDrive index={0}/>,
   <DbTestDrive index={1}/>,
   <DbTestDrive index={2}/>,
@@ -96,11 +98,10 @@ const slides = [
   <TableOfContents current={4}/>,
   <IntegratingViaDb/>,
   // GRAPHICS
-  // thesis on persistence 0
-  // thesis on persistence 1
-  // thesis on persistence 2
+  <ThesisSlide index={0}>is it true that persistence is working?</ThesisSlide>,
+  <ThesisSlide index={1}>is it true that persistence is working?</ThesisSlide>,
   // GRAPHICS
-  // thesis on persistence 2
+  <ThesisSlide index={1}>is it true that persistence is working?</ThesisSlide>,
   <TableOfContents current={4}/>,
   <TableOfContents current={5}/>,
   <UnitVsIntegration index={0}/>,
@@ -117,8 +118,8 @@ const slides = [
   <ApiFeature index={0}/>,
   <ApiFeature index={1}/>,
   // GRAPHICS
-  // thesis on service 0
-  // thesis on service 1
+  <ThesisSlide index={0}>what should be true about the service?</ThesisSlide>,
+  <ThesisSlide index={1}>what should be true about the service?</ThesisSlide>,
   <ApiTestDrive index={0}/>,
   <ApiTestDrive index={1}/>,
   <ApiTestDrive index={2}/>,
@@ -149,6 +150,8 @@ const slides = [
   <HardIntegrationsFeature index={3}/>,
   <HardIntegrationsTestDrive index={3}/>,
   // GRAPHICS
+  <ThesisSlide index={0}>is it true that customers get notified by email upon approval?</ThesisSlide>
+  <ThesisSlide index={1}>is it true that customers get notified by email upon approval?>,
   // thesis on email notifications 0
   // thesis on email notifications 1
   <TableOfContents current={9}/>,
