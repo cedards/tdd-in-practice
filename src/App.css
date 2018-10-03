@@ -1,0 +1,45 @@
+html, body, #root { height: 100% }
+
+body {
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.cell, .group {
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+
+.cell {
+  color: silver;
+  border: solid silver 3px;
+  margin: 0 5px;
+  padding: 30px 0px;
+}
+
+.group .cell:not(:first-child) {
+  border-top: none;
+}
+
+.cell.active {
+  color: black;
+  background-color: #4dd0e1;
+  border-color: #4dd0e1;
+}
+
+.cell.complete {
+  color: #4dd0e1;
+  background-color: black;
+  border-color: #4dd0e1;
+}
