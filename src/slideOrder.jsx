@@ -156,6 +156,7 @@ const slides = [
   <ApiTestDrive index={2}/>,
   <GraphicSlide>example-test-1.png</GraphicSlide>,
   <GraphicSlide>example-test-2.png</GraphicSlide>,
+  <GraphicSlide>example-test-3.png</GraphicSlide>,
   <GraphicSlide>service-6.png</GraphicSlide>,
   <GraphicSlide>service-7.png</GraphicSlide>,
   <TableOfContents current={6}/>,
