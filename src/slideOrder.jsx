@@ -1,10 +1,11 @@
 import React from 'react'
+import { GraphicSlide } from './GraphicSlide'
 import { TableOfContents } from './TableOfContents'
 import { Hello } from './slides/Hello'
 import { TalkIsNot, TalkIs } from './slides/TalkIsNot'
+import { WeirdTangent } from './slides/WeirdTangent'
 import {
   Epistemology,
-  EpistemologySchools,
   EpistemologicalAttitude,
   TddStance,
   EpistemologyReprise,
@@ -56,26 +57,25 @@ const slides = [
   <TalkIs index={3}/>,
   <TableOfContents current={1}/>,
   <TableOfContents current={2}/>,
-  // A weird tangent
-  // epistemology 0
-  // epistemology ?
-  // epistemology ??
-  // epistemology ???
+  <WeirdTangent/>,
   <Epistemology index={0}/>,
   <Epistemology index={1}/>,
   <Epistemology index={2}/>,
-  <EpistemologySchools index={0}/>,
-  <EpistemologySchools index={1}/>,
-  <EpistemologySchools index={2}/>,
-  <EpistemologySchools index={3}/>,
-  <EpistemologySchools index={4}/>,
-  <EpistemologySchools index={0}/>,
+  <Epistemology index={3}/>,
+  <Epistemology index={0}/>,
+  <Epistemology index={4}/>,
+  <Epistemology index={5}/>,
+  <Epistemology index={6}/>,
+  <Epistemology index={7}/>,
+  <Epistemology index={8}/>,
+  <Epistemology index={9}/>,
+  <Epistemology index={0}/>,
   <EpistemologicalAttitude index={0}/>,
   <EpistemologicalAttitude index={1}/>,
   <TddStance index={0}/>,
   <TddStance index={1}/>,
   <TddStance index={2}/>,
-  <ThesisSlide/>,
+  <ThesisSlide index={1}/>,
   <TableOfContents current={2}/>,
   <TableOfContents current={3}/>,
   <DatabaseFeature index={0}/>,
@@ -84,23 +84,38 @@ const slides = [
   <DbTestDrive index={0}/>,
   <DbTestDrive index={1}/>,
   <DbTestDrive index={2}/>,
-  // GRAPHICS
+  <GraphicSlide>db-feature-graphic-1.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-2.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-3.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-4.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-5.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-6.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-7.png</GraphicSlide>,
   <DbTestDrive index={3}/>,
   <DbTestDrive index={4}/>,
-  // what really matters how
-  // what really matters why
+  <DbTestDrive index={5}/>,
+  <DbTestDrive index={6}/>,
   <DatabaseFeature index={2}/>,
   <DatabaseFeature index={3}/>,
   <DatabaseFeature index={4}/>,
   <DatabaseFeature index={5}/>,
-  // GRAPHICS
+  <GraphicSlide>db-feature-graphic-8.png</GraphicSlide>,
+  <GraphicSlide>db-feature-graphic-9.png</GraphicSlide>,
   <TableOfContents current={3}/>,
   <TableOfContents current={4}/>,
   <IntegratingViaDb/>,
-  // GRAPHICS
+  <GraphicSlide>db-integration-1.png</GraphicSlide>,
+  <GraphicSlide>db-integration-2.png</GraphicSlide>,
+  <GraphicSlide>db-integration-3.png</GraphicSlide>,
+  <GraphicSlide>db-integration-1.png</GraphicSlide>,
+  <GraphicSlide>db-integration-4.png</GraphicSlide>,
+  <GraphicSlide>db-integration-5.png</GraphicSlide>,
+  <GraphicSlide>db-integration-6.png</GraphicSlide>,
+  <GraphicSlide>db-integration-5.png</GraphicSlide>,
+  <GraphicSlide>db-integration-7.png</GraphicSlide>,
   <ThesisSlide index={0}>is it true that persistence is working?</ThesisSlide>,
   <ThesisSlide index={1}>is it true that persistence is working?</ThesisSlide>,
-  // GRAPHICS
+  <GraphicSlide>db-integration-6.png</GraphicSlide>,
   <ThesisSlide index={1}>is it true that persistence is working?</ThesisSlide>,
   <TableOfContents current={4}/>,
   <TableOfContents current={5}/>,
@@ -150,10 +165,8 @@ const slides = [
   <HardIntegrationsFeature index={3}/>,
   <HardIntegrationsTestDrive index={3}/>,
   // GRAPHICS
-  <ThesisSlide index={0}>is it true that customers get notified by email upon approval?</ThesisSlide>
-  <ThesisSlide index={1}>is it true that customers get notified by email upon approval?>,
-  // thesis on email notifications 0
-  // thesis on email notifications 1
+  <ThesisSlide index={0}>is it true that customers get notified by email upon approval?</ThesisSlide>,
+  <ThesisSlide index={1}>is it true that customers get notified by email upon approval?</ThesisSlide>,
   <TableOfContents current={9}/>,
   <TableOfContents current={10}/>,
   <ManualStepsFeature index={0}/>,

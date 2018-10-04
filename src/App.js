@@ -12,7 +12,7 @@ const DOWN = 40
 class App extends Component {
   constructor(props) {
     super(props)
-    this.state = { index: 30 }
+    this.state = { index: 43 }
   }
 
   componentDidMount() {

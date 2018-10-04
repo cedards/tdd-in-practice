@@ -6,20 +6,54 @@ import {
   FeatureSlideHeader,
   FeatureSlideFrame
 } from '../FeatureSlide'
+import { FloatingElement } from '../FloatingElement'
+
+const QMark1 = props => (
+  <FloatingElement show={props.index >= 1 && props.index < 4} highlight="bad" offsetY={props.y} offsetX={props.x}>?</FloatingElement>
+)
+const QMark2 = props => (
+  <FloatingElement show={props.index >= 2 && props.index < 4} highlight="bad" offsetY={props.y} offsetX={props.x}>?</FloatingElement>
+)
 
 export const Epistemology = props => (
   <FeatureSlide title="epistemology" icon="lightbulb">
-    <FeatureLine show={props.index >= 1}>studies the nature of knowledge</FeatureLine> 
-    <FeatureLine show={props.index >= 2}>"how do we know that we know?"</FeatureLine> 
-  </FeatureSlide>
-)
+    <QMark1 index={props.index} y="100px" x="100px"/>
+    <QMark1 index={props.index} y="0px" x="420px"/>
+    <QMark1 index={props.index} y="0px" x="820px"/>
+    <QMark1 index={props.index} y="350px" x="620px"/>
+    <QMark1 index={props.index} y="400px" x="360px"/>
+    <QMark1 index={props.index} y="70px" x="1020px"/>
 
-export const EpistemologySchools = props => (
-  <FeatureSlide title="epistemology" icon="lightbulb">
-    <FeatureLine show={props.index >= 1}>empiricism</FeatureLine> 
-    <FeatureLine show={props.index >= 2}>constructivism</FeatureLine> 
-    <FeatureLine show={props.index >= 3}>rationalism</FeatureLine> 
-    <FeatureLine show={props.index >= 4}>idealism</FeatureLine> 
+    <QMark2 index={props.index} y="100px" x="300px"/>
+    <QMark2 index={props.index} y="40px" x="620px"/>
+    <QMark2 index={props.index} y="0px" x="820px"/>
+
+    <QMark2 index={props.index} y="600px" x="600px"/>
+    <QMark2 index={props.index} y="500px" x="800px"/>
+    <QMark2 index={props.index} y="300px" x="500px"/>
+    <QMark2 index={props.index} y="500px" x="400px"/>
+    <QMark2 index={props.index} y="450px" x="700px"/>
+    <QMark2 index={props.index} y="450px" x="1700px"/>
+
+    <QMark2 index={props.index} y="250px" x="1600px"/>
+    <QMark2 index={props.index} y="350px" x="1500px"/>
+    <QMark2 index={props.index} y="450px" x="1700px"/>
+    <QMark2 index={props.index} y="550px" x="1200px"/>
+
+    <QMark2 index={props.index} y="150px" x="1400px"/>
+    <QMark2 index={props.index} y="250px" x="1200px"/>
+    <QMark2 index={props.index} y="350px" x="1400px"/>
+    <QMark2 index={props.index} y="450px" x="1000px"/>
+
+    <FloatingElement show={props.index === 3} offsetX="800px" offsetY="350px"><img src="images/epistemology.png" width="800px"/></FloatingElement>
+
+    <FeatureLine show={props.index >= 4 && props.index < 6}>studies the nature of knowledge</FeatureLine> 
+    <FeatureLine show={props.index >= 5 && props.index < 6}>"how do we know that we know?"</FeatureLine> 
+
+    <FloatingElement show={props.index >= 6} offsetY="350px" offsetX="500px">empiricism</FloatingElement>
+    <FloatingElement show={props.index >= 7} offsetY="250px" offsetX="1000px">constructivism</FloatingElement>
+    <FloatingElement show={props.index >= 8} offsetY="0px" offsetX="750px">rationalism</FloatingElement>
+    <FloatingElement show={props.index >= 9} offsetY="60px" offsetX="350px">idealism</FloatingElement>
   </FeatureSlide>
 )
 

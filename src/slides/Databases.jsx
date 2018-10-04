@@ -8,6 +8,7 @@ import {
 } from '../FeatureSlide'
 import { Good } from '../Highlight'
 import { Icon } from '../Icon'
+import { FloatingElement } from '../FloatingElement'
 
 const featureSecondLine = index => {
   switch(index) {
@@ -28,6 +29,7 @@ export const DatabaseFeature = props => (
   <FeatureSlide title="feature:" icon="database">
     <FeatureLine show={props.index >= 1}>When a user submits a cc application,</FeatureLine> 
     { featureSecondLine(props.index) }
+    <FloatingElement show={props.index === 3} highlight="bad" offsetX="50px" offsetY="450px">that was never<br/>the real feature!</FloatingElement>
   </FeatureSlide>
 )
 
@@ -37,6 +39,8 @@ export const DbTestDrive = props => (
     <FeatureLine show={props.index >= 2}>Assert that{ props.index < 4 && '...?'}
       <Good show={props.index >= 4}> the application can be fetched from storage</Good>
     </FeatureLine>
+    <FloatingElement show={props.index >= 5} highlight="spot" offsetY="500px" offsetX="300px">how?</FloatingElement>
+    <FloatingElement show={props.index >= 6} highlight="spot" offsetY="650px" offsetX="200px"><b>why?</b></FloatingElement>
   </FeatureSlide>
 )
 
