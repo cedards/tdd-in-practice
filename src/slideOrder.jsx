@@ -122,31 +122,47 @@ const slides = [
   <UnitVsIntegration index={0}/>,
   <UnitVsIntegration index={1}/>,
   // unit vs. integration 2
-  // GRAPHICS
+  <GraphicSlide>pyramid-1.png</GraphicSlide>,
+  <GraphicSlide>pyramid-2.png</GraphicSlide>,
+  <GraphicSlide>pyramid-3.png</GraphicSlide>,
+  <GraphicSlide>pyramid-4.png</GraphicSlide>,
+  <GraphicSlide>pyramid-5.png</GraphicSlide>,
+  <GraphicSlide>pyramid-6.png</GraphicSlide>,
   <WhyAPyramid index={0}/>,
   <WhyAPyramid index={1}/>,
-  // GRAPHICS
+  <GraphicSlide>pyramid-1.png</GraphicSlide>,
+  <GraphicSlide>pyramid-7.png</GraphicSlide>,
+  <GraphicSlide>pyramid-9.png</GraphicSlide>,
+  <GraphicSlide>pyramid-10.png</GraphicSlide>,
+  <GraphicSlide>pyramid-11.png</GraphicSlide>,
+  <GraphicSlide>pyramid-12.png</GraphicSlide>,
+  <GraphicSlide>pyramid-13.png</GraphicSlide>,
+  <GraphicSlide>pyramid-14.png</GraphicSlide>,
   <NotUnitOrIntegration/>,
   <YesFastRobustClear/>,
   <TableOfContents current={5}/>,
   <TableOfContents current={6}/>,
   <ApiFeature index={0}/>,
   <ApiFeature index={1}/>,
-  // GRAPHICS
+  <GraphicSlide>service-1.png</GraphicSlide>,
+  <GraphicSlide>service-2.png</GraphicSlide>,
+  <GraphicSlide>service-3.png</GraphicSlide>,
+  <GraphicSlide>service-4.png</GraphicSlide>,
+  <GraphicSlide>service-5.png</GraphicSlide>,
   <ThesisSlide index={0}>what should be true about the service?</ThesisSlide>,
   <ThesisSlide index={1}>what should be true about the service?</ThesisSlide>,
   <ApiTestDrive index={0}/>,
   <ApiTestDrive index={1}/>,
   <ApiTestDrive index={2}/>,
-  // example test 0
-  // example test 1
-  // GRAPHICS
-  // contract test tools
+  <GraphicSlide>example-test-1.png</GraphicSlide>,
+  <GraphicSlide>example-test-2.png</GraphicSlide>,
+  <GraphicSlide>service-6.png</GraphicSlide>,
+  <GraphicSlide>service-7.png</GraphicSlide>,
   <TableOfContents current={6}/>,
   <TableOfContents current={7}/>,
-  // test question 0
-  // test question 1
-  // test question 2
+  <GraphicSlide>uncertain-1.png</GraphicSlide>,
+  <GraphicSlide>uncertain-2.png</GraphicSlide>,
+  <GraphicSlide>uncertain-3.png</GraphicSlide>,
   <TableOfContents current={7}/>,
   <TableOfContents current={8}/>,
   <BeTheChange index={0}/>,
@@ -160,11 +176,17 @@ const slides = [
   <HardIntegrationsTestDrive index={0}/>,
   <HardIntegrationsTestDrive index={1}/>,
   <HardIntegrationsTestDrive index={2}/>,
-  // GRAPHICS
+  <GraphicSlide>email-1.png</GraphicSlide>,
+  <GraphicSlide>email-2.png</GraphicSlide>,
+  <GraphicSlide>email-3.png</GraphicSlide>,
   <HardIntegrationsFeature index={2}/>,
   <HardIntegrationsFeature index={3}/>,
   <HardIntegrationsTestDrive index={3}/>,
-  // GRAPHICS
+  <GraphicSlide>email-4.png</GraphicSlide>,
+  <GraphicSlide>email-5.png</GraphicSlide>,
+  <GraphicSlide>email-6.png</GraphicSlide>,
+  <GraphicSlide>email-7.png</GraphicSlide>,
+  <GraphicSlide>email-8.png</GraphicSlide>,
   <ThesisSlide index={0}>is it true that customers get notified by email upon approval?</ThesisSlide>,
   <ThesisSlide index={1}>is it true that customers get notified by email upon approval?</ThesisSlide>,
   <TableOfContents current={9}/>,
@@ -175,17 +197,20 @@ const slides = [
   <ManualStepsProblem/>,
   <ManualStepsWhatDo index={0}/>,
   <ManualStepsWhatDo index={1}/>,
-  // GRAPHICS
+  <GraphicSlide>manual-1.png</GraphicSlide>,
+  <GraphicSlide>manual-2.png</GraphicSlide>,
+  <GraphicSlide>manual-3.png</GraphicSlide>,
   <TableOfContents current={10}/>,
   <TableOfContents current={11}/>,
   <EnvironmentSpecificProblem index={0}/>,
   <EnvironmentSpecificProblem index={1}/>,
   <EnvironmentSpecificProblem index={2}/>,
   <UsualTricks/>,
-  // GRAPHICS
-  // example code contract
-  // example code DEV
-  // example code QA
+  <GraphicSlide>environment-1.png</GraphicSlide>,
+  <GraphicSlide>environment-2.png</GraphicSlide>,
+  <GraphicSlide>environment-3.png</GraphicSlide>,
+  <GraphicSlide>environment-4.png</GraphicSlide>,
+  <GraphicSlide>environment-5.png</GraphicSlide>,
   <SameTechnique/>,
   <SolidInTheWild/>,
   <TableOfContents current={11}/>,
