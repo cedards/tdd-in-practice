@@ -98,7 +98,7 @@ export const TheFirstQuestion = props => (
       <FeatureLine show={props.index === 1} highlight="good">how will we prove that it worked?</FeatureLine>
     }
     { props.index === 2 &&
-      <FeatureLine highlight="bad">what is the correct we have to make to service X?</FeatureLine>
+      <FeatureLine highlight="bad">what is the correct call we have to make to service X?</FeatureLine>
     }
     { props.index === 3 &&
       <FeatureLine highlight="good">how will we prove that we have called service X correctly?</FeatureLine>
