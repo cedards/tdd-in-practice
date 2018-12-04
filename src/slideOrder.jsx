@@ -227,6 +227,10 @@ const slides = [
   <TheFirstQuestion index={1}/>,
   <TheFirstQuestion index={2}/>,
   <TheFirstQuestion index={3}/>,
+  <TheFirstQuestion index={4}/>,
+  <TheFirstQuestion index={5}/>,
+  <TheFirstQuestion index={6}/>,
+  <TheFirstQuestion index={7}/>,
   <TableOfContents current={13}/>,
   <TableOfContents current={14}/>,
 ]

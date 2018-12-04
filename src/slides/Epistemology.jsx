@@ -103,5 +103,17 @@ export const TheFirstQuestion = props => (
     { props.index === 3 &&
       <FeatureLine highlight="good">how will we prove that we have called service X correctly?</FeatureLine>
     }
+    { props.index === 4 &&
+      <FeatureLine highlight="bad">how will we make the service performant under load?<br/><br/></FeatureLine>
+    }
+    { props.index === 5 &&
+      <FeatureLine highlight="good">how will we prove that the service is performant under load?<br/><br/></FeatureLine>
+    }
+    { props.index === 6 &&
+      <FeatureLine highlight="bad">how will we handle disaster recovery?<br/><br/></FeatureLine>
+    }
+    { props.index === 7 &&
+      <FeatureLine highlight="good">how will we prove that we can recover from disasters?<br/><br/></FeatureLine>
+    }
   </FeatureSlide>
 )
