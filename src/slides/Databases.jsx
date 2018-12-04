@@ -29,7 +29,6 @@ export const DatabaseFeature = props => (
   <FeatureSlide title="feature:" icon="database">
     <FeatureLine show={props.index >= 1}>When a user submits a cc application,</FeatureLine> 
     { featureSecondLine(props.index) }
-    <FloatingElement show={props.index === 3} highlight="bad" offsetX="50px" offsetY="450px">that was never<br/>the real feature!</FloatingElement>
   </FeatureSlide>
 )
 
@@ -39,8 +38,8 @@ export const DbTestDrive = props => (
     <FeatureLine show={props.index >= 2}>Assert that{ props.index < 4 && '...?'}
       <Good show={props.index >= 4}> the application can be fetched from storage</Good>
     </FeatureLine>
-    <FloatingElement show={props.index >= 5} highlight="spot" offsetY="500px" offsetX="300px">how?</FloatingElement>
-    <FloatingElement show={props.index >= 6} highlight="spot" offsetY="650px" offsetX="200px"><b>why?</b></FloatingElement>
+    <FloatingElement show={props.index >= 5} highlight="spot" offsetY="500px" offsetX="200px">how?</FloatingElement>
+    <FloatingElement show={props.index >= 6} highlight="spot" offsetY="650px" offsetX="100px"><b>why?</b></FloatingElement>
   </FeatureSlide>
 )
 
@@ -49,7 +48,7 @@ export const IntegratingViaDb = props => (
 )
 
 export const UnitVsIntegration = props => (
-  <FeatureSlide title="unit vs. integration tests:" icon="custom-triangle">
+  <FeatureSlide title="unit vs. integration:" icon="custom-triangle">
     <FeatureLine show={props.index >= 1}>The testing pyramid says you should have many unit tests, fewer integration tests</FeatureLine> 
   </FeatureSlide>
 )

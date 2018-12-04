@@ -64,7 +64,7 @@ export const FeatureSlide = props => (
 )
 
 export const FeatureLine = Highlightable(Hideable(props => (
-  <p style={{fontSize: "4.4em"}}>{props.children}</p>
+  <p style={{fontSize: "4em"}}>{props.children}</p>
 )))
 
 FeatureLine.defaultProps = {

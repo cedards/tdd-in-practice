@@ -73,8 +73,8 @@ export const SameTechnique = props => (
 
 export const SolidInTheWild = props => (
   <FeatureSlide title="for more on this:" icon="exchange-alt">
-    <FeatureLine>SpringOne 2017 talk, "SOLID in the Wild"</FeatureLine>
-    <FeatureLine>on YouTube</FeatureLine>
+    <FeatureLine>SpringOne 2017 talk</FeatureLine>
+    <FeatureLine>"SOLID in the Wild", on YouTube</FeatureLine>
   </FeatureSlide>
 )
 

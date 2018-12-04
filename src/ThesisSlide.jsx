@@ -8,7 +8,7 @@ const containerStyle1 = {
   display: "flex",
   alignContent: "center",
   color: "white",
-  fontSize: "5em",
+  fontSize: "4em",
 }
 
 const leftContainerStyle = {

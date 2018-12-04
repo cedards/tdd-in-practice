@@ -14,6 +14,9 @@ const QMark1 = props => (
 const QMark2 = props => (
   <FloatingElement show={props.index >= 2 && props.index < 4} highlight="bad" offsetY={props.y} offsetX={props.x}>?</FloatingElement>
 )
+const QMark3 = props => (
+  <FloatingElement show={props.index === 3} highlight="bad" offsetY={props.y} offsetX={props.x}>?</FloatingElement>
+)
 
 export const Epistemology = props => (
   <FeatureSlide title="epistemology" icon="lightbulb">
@@ -33,19 +36,25 @@ export const Epistemology = props => (
     <QMark2 index={props.index} y="300px" x="500px"/>
     <QMark2 index={props.index} y="500px" x="400px"/>
     <QMark2 index={props.index} y="450px" x="700px"/>
-    <QMark2 index={props.index} y="450px" x="1700px"/>
+    <QMark2 index={props.index} y="450px" x="100px"/>
 
-    <QMark2 index={props.index} y="250px" x="1600px"/>
-    <QMark2 index={props.index} y="350px" x="1500px"/>
-    <QMark2 index={props.index} y="450px" x="1700px"/>
+    <QMark2 index={props.index} y="250px" x="1000px"/>
+    <QMark2 index={props.index} y="350px" x="800px"/>
+    <QMark2 index={props.index} y="450px" x="900px"/>
     <QMark2 index={props.index} y="550px" x="1200px"/>
 
-    <QMark2 index={props.index} y="150px" x="1400px"/>
+    <QMark2 index={props.index} y="150px" x="1100px"/>
     <QMark2 index={props.index} y="250px" x="1200px"/>
-    <QMark2 index={props.index} y="350px" x="1400px"/>
+    <QMark2 index={props.index} y="350px" x="1300px"/>
     <QMark2 index={props.index} y="450px" x="1000px"/>
 
-    <FloatingElement show={props.index === 3} offsetX="800px" offsetY="350px"><img src="images/epistemology.png" width="800px"/></FloatingElement>
+    <FloatingElement show={props.index === 3} offsetX="500px" offsetY="325px"><img src="images/epistemology.png" width="800px"/></FloatingElement>
+    <QMark3 index={props.index} y="360px" x="620px"/>
+    <QMark3 index={props.index} y="360px" x="690px"/>
+    <QMark3 index={props.index} y="410px" x="570px"/>
+    <QMark3 index={props.index} y="410px" x="740px"/>
+    <QMark3 index={props.index} y="460px" x="620px"/>
+    <QMark3 index={props.index} y="460px" x="690px"/>
 
     <FeatureLine show={props.index >= 4 && props.index < 6}>studies the nature of knowledge</FeatureLine> 
     <FeatureLine show={props.index >= 5 && props.index < 6}>"how do we know that we know?"</FeatureLine> 
@@ -69,10 +78,10 @@ export const EpistemologicalAttitude = props => (
 export const TddStance = props => (
   <FeatureSlide title="TDD is the stance that" icon="lightbulb">
     { props.index <= 1 && 
-      <FeatureLine show={props.index === 1}>the only things that are true are things that have been <b><i>proven</i></b></FeatureLine> 
+      <FeatureLine show={props.index === 1}>the only things that are true<br/>are things that have been<br/><b><i>proven</i></b></FeatureLine> 
     }
     { props.index === 2 && 
-      <FeatureLine>the only things that are proven are things that have been <b><i>demonstrated</i></b></FeatureLine> 
+      <FeatureLine>the only things that are proven<br/>are things that have been<br/><b><i>demonstrated</i></b></FeatureLine> 
     }
   </FeatureSlide>
 )
@@ -86,8 +95,8 @@ export const EpistemologyReprise = props => (
 
 export const EpistemologyImpact = props => (
   <FeatureSlide title="epistemology of TDD" icon="lightbulb">
-    <FeatureLine>how product managers write user stories</FeatureLine>
-    <FeatureLine>how teams document their APIs</FeatureLine>
+    <FeatureLine>how product managers write<br/>user stories</FeatureLine>
+    <FeatureLine>how teams document their APIs<br/><br/></FeatureLine>
   </FeatureSlide>
 )
 
@@ -95,13 +104,13 @@ export const TheFirstQuestion = props => (
   <FeatureSlide title="epistemology of TDD" icon="lightbulb">
     <FeatureLine>the first question:</FeatureLine>
     { props.index <= 1 &&
-      <FeatureLine show={props.index === 1} highlight="good">how will we prove that it worked?</FeatureLine>
+      <FeatureLine show={props.index === 1} highlight="good">how will we prove that it worked?<br/><br/><br/></FeatureLine>
     }
     { props.index === 2 &&
-      <FeatureLine highlight="bad">what is the correct call we have to make to service X?</FeatureLine>
+      <FeatureLine highlight="bad">what is the correct call we have to make to service X?<br/><br/></FeatureLine>
     }
     { props.index === 3 &&
-      <FeatureLine highlight="good">how will we prove that we have called service X correctly?</FeatureLine>
+      <FeatureLine highlight="good">how will we prove that we have called service X correctly?<br/><br/></FeatureLine>
     }
     { props.index === 4 &&
       <FeatureLine highlight="bad">how will we make the service performant under load?<br/><br/></FeatureLine>

@@ -33,7 +33,7 @@ const TableOfContents = props => (
       </Group>
       <Group>
         <Cell index={6} currentIndex={props.current} icon="code">service APIs</Cell>
-        <Cell index={7} currentIndex={props.current} icon="question">uncertain requirements</Cell>
+        <Cell index={7} currentIndex={props.current} icon="question">uncertain reqs</Cell>
         <Cell index={8} currentIndex={props.current} icon="hand-holding-heart">be the change</Cell>
       </Group>
       <Group>

@@ -14,6 +14,7 @@ const headingStyle = {
   color: "white",
   fontSize: "5em",
   textAlign: "center",
+  fontWeight: "normal",
 }
 
 export const WeirdTangent = props => (
