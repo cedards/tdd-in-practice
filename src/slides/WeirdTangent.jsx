@@ -18,6 +18,6 @@ const headingStyle = {
 
 export const WeirdTangent = props => (
   <div style={containerStyle}>
-  <h1 style={headingStyle}>"A weird tangent that I promise is really relevant and is in fact the fundamental premise for this entire webinar"</h1>
+  <h1 style={headingStyle}>"A weird tangent that I promise is really relevant and is in fact the fundamental premise for this entire talk"</h1>
   </div>
 )
