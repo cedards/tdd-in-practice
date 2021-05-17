@@ -46,7 +46,6 @@ const slides = [
   <Hello index={0}/>,
   <Hello index={1}/>,
   <Hello index={2}/>,
-  <Hello index={3}/>,
   <TalkIsNot index={0}/>,
   <TalkIsNot index={1}/>,
   <TalkIsNot index={2}/>,
